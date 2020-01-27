@@ -201,18 +201,18 @@ class Square(PhysicalObject):
 # MAIN
 # ==============================================================================
 if __name__ == '__main__':
-
+    '''
     window = tk.Tk()
     canvas = tk.Canvas(window, width=1000, height=500, bg="gray20")
     canvas.pack()
     for i in range(5):
-        sq = Square(canvas, x=100 * i, floor=None, scale=5)
+        sq = Square(canvas, x=100 * i)
         # hilo = th.Thread(target=sq.gravity, daemon=True)
         # hilo.start()
         print(sq.gravity())
     tk.mainloop()
     # hilo.stop()
-
+    '''
     m = Math()
     vector1 = m.vector(1, 2, 3)
     vector2 = m.vector(2, 2, 2)
